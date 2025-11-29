@@ -44,20 +44,21 @@ Known Issues:
 
 1. Weapon Loot Assignment Limitation**
   Issue: Guns cannot be assigned to the Enemy Loot drop system.
-  Reason: The weapon logic (e.g., `PlayerShoot`, `Spreadgun`) requires a reference to the `firePoint` Transform. The `firePoint` is a child of the Player object in the active Scene.
-          Unity Prefabs (assets) cannot store references to objects inside a Scene.
-          Therefore, if a Gun is spawned as loot from a prefab, the `firePoint` reference becomes null, and the weapon cannot fire.
+  Reason:The weapon logic (e.g., `PlayerShoot`, `Spreadgun`) requires a reference to the
+         firePoint`Transform. The `firePoint` is a child of the Player object in the active Scene.
+         Unity Prefabs (assets) cannot store references to objects inside a Scene.
+         Therefore, if a Gun is spawned as loot from a prefab, the `firePoint` reference becomes null, and theweapon cannot fire.
 
-2. Missing ScoreManager
+3. Missing ScoreManager
   Issue:  Killing an enemy may result in a runtime error.
-  Reason: The `EnemyHealth` script attempts to call `ScoreManager.instance.AddScore()`, but the ScoreManager script/object is currently missing from the project files.
+  Reason: The `EnemyHealth`script attempts to call `ScoreManager.instance.AddScore()`, but the ScoreManager script/object is currently missing from the project files.
 
-3. Animation Gliding:
+4. Animation Gliding:
   Issue:  The player character may appear to "slide" slightly after input stops.
   Reason: The Animation script uses `Input.GetAxis` (which applies smoothing) while the Movement script uses `Input.GetAxisRaw` (instant movement).
           This mismatch causes the walk animation to play slightly longer than the actual movement.
 
-4. Unassigned UI References:
+5. Unassigned UI References:
   Issue:Game may throw Null Reference Exceptions during Waves or Player Damage.
   Reason:Scripts like `WaveManager` and `HealthController` require UI Text and Panels to be manually assigned in the Inspector.
           If these fields are empty, the UI updates will fail.
