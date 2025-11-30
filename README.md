@@ -17,7 +17,7 @@ NOTE:THIS PROJECT MAKE IN UNITY 2022.362F2 LTS VERSION
  
  Power-Up System:A "Pickup" item that temporarily boosts weapon stats (Fire Rate, Damage, Projectile Count) for a set duration.
  
- Random Weapon Spawning:** Guns spawn dynamically at random coordinates within defined world limits.
+ Random Weapon Spawning:Guns spawn dynamically at random coordinates within defined world limits.
 
  Enemy Animations: Added movement animations for enemies.
 
@@ -29,8 +29,8 @@ NOTE:THIS PROJECT MAKE IN UNITY 2022.362F2 LTS VERSION
 
  2.2Enemy AI & Progression:
      State Machine AI:Enemies wander randomly and switch to a "Chase" state when the player enters their detection radius. 
-     Wave System:** A structured progression system with 4 waves of increasing difficulty, culminating in a Win state.
-     Visual Feedback:** Added enemy movement animations and particle effects for death and bullet impacts.
+     Wave System:A structured progression system with 4 waves of increasing difficulty, culminating in a Win state.
+     Visual Feedback:Added enemy movement animations and particle effects for death and bullet impacts.
 
  2.3Loot & Economy:
      Loot Drops: Defeated enemies have a chance to drop random items, including Power-ups and Healing Potions.
