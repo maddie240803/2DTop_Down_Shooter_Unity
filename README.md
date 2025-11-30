@@ -1,3 +1,6 @@
+NOTE:THIS PROJECT MAKE IN UNITY 2022.362F2 LTS VERSION 
+
+
 1.Controls:
 
  Movement: `W`, `A`, `S`, `D`  (Moves the character relative to the screen).
